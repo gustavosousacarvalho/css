@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aulas css</title>
+    <style>
+        * {
+          color: red;
+        }
+        p {
+          background-color: gold;
+        }
+        .paragrafo {
+          background-color: green;
+        }
+        table,
+        th,
+        td {
+          border: 3px solid grey;
+        }
+        #borda-tracejada{
+            border: 2px dotted black;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Aulas css</h1>
+    <p id="borda-tracejada">
+      CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido
+      para o português, significa Folha de Estilo em Cascatas. O CSS é fácil de
+      aprender e entender e é facilmente utilizado com as linguagens de marcação
+      HTML ou XHTML.
+    </p>
+    <h2>Seletores css</h2>
+    <p class="paragrafo">
+      O seletor é a parte da regra CSS que está antes do sinal “{“ (chave de
+      abertura). O seletor aqui é p , que "casa" com todos os elementos p do
+      documento e faz com que qualquer texto dentro de um parágrafo seja na cor
+      vermelha. Bem básico.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Seletor</th>
+          <th>Descrição</th>
+          <th>Exemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tag</td>
+          <td>utilizado com o nome da tag para aplicar css</td>
+          <td>
+            <pre>p { background-color: gold;}</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>class</td>
+          <td>utiliza o atributo class para estilizar o elemento</td>
+          <td>
+            <pre>.paragrafo{ background-color: gold;}</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>Universal</td>
+          <td>usado para selecionar todos os elementos da pagina</td>
+          <td>
+            <pre>*{color:red}</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td>usado para selecior um unico elemento</td>
+          <td>
+            <pre>#borda-tracejada{border: 2px doted }</pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
