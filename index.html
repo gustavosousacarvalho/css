@@ -5,32 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aulas css</title>
     <style>
-        * {
-          color: red;
-        }
-        p {
-          background-color: gold;
-        }
-        .paragrafo {
-          background-color: green;
-        }
-        table,
-        th,
-        td {
-          border: 3px solid grey;
-        }
-        #borda-tracejada{
-            border: 2px dotted black;
-        }
-      </style>
+      * {
+        color: red;
+      }
+      p {
+        background-color: gold;
+      }
+      .paragrafo {
+        background-color: green;
+      }
+      table,
+      th,
+      td {
+        border: 3px solid grey;
+      }
+      #borda-tracejada {
+        border: 2px dotted black;
+      }
+      p span {
+        font-size: 24px;
+        color: blue;
+      }
+      p > span {
+        font-size: 24px;
+        color: blue;
+      }
+      h2 + p{
+        border: 6px dotted #970bb3;
+
+      }
+    </style>
   </head>
   <body>
-    <h1>Aulas css</h1>
+    <h1>Aulas <span>css</span></h1>
     <p id="borda-tracejada">
       CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido
-      para o português, significa Folha de Estilo em Cascatas. O CSS é fácil de
-      aprender e entender e é facilmente utilizado com as linguagens de marcação
-      HTML ou XHTML.
+      para o português,
+      <strong><span>significa Folha de Estilo em Cascatas.</span></strong> O CSS
+      é fácil de aprender e entender e é facilmente utilizado com as linguagens
+      de marcação
+      <span>HTML ou XHTML.</span>
     </p>
     <h2>Seletores css</h2>
     <p class="paragrafo">
@@ -75,6 +89,27 @@
           <td>
             <pre>#borda-tracejada{border: 2px doted }</pre>
           </td>
+        </tr>
+        <tr>
+          <td>descendente</td>
+          <td>usado para selecionar todos dentro do elemento</td>
+          <td>
+            <pre>p span{ font-size: 24px;color: blue;}</pre>
+          </td>
+        </tr>
+        <tr>
+          <td>Filho</td>
+          <td>seleciona os filhos do elemento</td>
+          <td>
+              <pre> p > span {font-size: 24px;color: blue;}</pre>
+          </td>
+        </tr>
+        <tr>
+            <td>Adjacente</td>
+            <td>usado para selecionar o elemento do lado</td>
+            <td>
+                <pre>h2 + p{border: 6px dotted #970bb3;}</pre>
+            </td>
         </tr>
       </tbody>
     </table>
