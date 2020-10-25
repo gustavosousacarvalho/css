@@ -7,42 +7,52 @@
     <style>
       .container {
         background-color: purple;
-        width: 600px;
+        width: 100%;
         height: 400px;
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        flex-direction: row;
         /* flex-direction:column-reverse; */
+        flex-wrap: wrap;
+        align-items: center;
       }
       .item {
-        flex: 1;
         background-color: orange;
         margin: 10px;
+        width: 200px;
       }
       .item:first-of-type {
-    
       }
       .item2 {
-        flex: 2;
-        background-color: orange;
+        background-color: #fff;
         margin: 10px;
-             }
-             .text-alingn {
-                 text-align: center;
-             }
+        width: 150px;
+        align-self: flex-end;
+      }
+      .text-alingn {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <h1>Flexbox css</h1>
-    <div class="container">
-      <div class="item">
-          <h1 class="text-alingn">1</h1>
+    <div class="container" draggable="true">
+      <div draggable="true" class="item" style="order: 6;">
+        <h1 class="text-alingn">1</h1>
       </div>
-      <div class="item2">
-          <h1 class="text-alingn">2</h1>
+      <div draggable="true" class="item2" style="order: 5;">
+        <h1 class="text-alingn">2</h1>
       </div>
-      <div class="item">
-          <h1 class="text-alingn">3</h1>
+      <div draggable="true" class="item" style="order: 4;">
+        <h1 class="text-alingn">3</h1>
+      </div>
+      <div draggable="true" class="item" style="order: 3;">
+        <h1 class="text-alingn">4</h1>
+      </div>
+      <div draggable="true" class="item" style="order: 2;">
+        <h1 class="text-alingn">5</h1>
+      </div>
+      <div draggable="true" class="item" style="order: 1;">
+        <h1 class="text-alingn">6</h1>
       </div>
     </div>
   </body>
