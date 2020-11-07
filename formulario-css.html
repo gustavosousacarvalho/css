@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envio de formulario de contato</title>
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+      }
+      .formulario {
+        flex: 1;
+        margin: 30px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      textarea {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ENVIO DE FORMULARIO DE CONTATO</h1>
+    <form action="/" class="container">
+      <div class="formulario">
+        <label for="">Nome</label>
+        <input type="text" name="nome" />
+        <label for="">E-mail</label>
+        <input type="email" name="E-mail" />
+        <label for="">Telefone</label>
+        <input type="tel" name="telefone" />
+      </div>
+      <div class="formulario">
+        <label for="">Assunto</label>
+        <input type="text" name="assunto" />
+        <label for="">Mensagem</label>
+        <textarea name="mensagem" rows="4" style="width: 100%"></textarea>
+        <input
+          type="button"
+          value="Enviar"
+          style="float: right; width: 100px"
+        />
+      </div>
+    </form>
+  </body>
+</html>
