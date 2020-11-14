@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animação</title>
+    <style>
+        @-webkit-keyframes rodaroda {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        .bola {
+            margin: 50px;
+            -webkit-animation-name: rodaroda;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: normal;
+        }
+
+        .roda-contrario {
+            -webkit-animation-direction: reverse;
+
+        }
+
+        .bola:hover {
+            -webkit-animation-direction: alternate;
+
+        }
+
+        .passaro {
+            position: relative;
+            animation: mymove 20s infinite;
+        }
+
+        @keyframes mymove {
+            from {
+                left : 0px;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="img/bola.jpg" alt="" class="bola">
+        <img src="img/bola.jpg" alt="" class="roda-contrario bola">
+        <img src="img/bola.jpg" alt="" class="bola">
+    </div>
+    <div style="overflow: hidden;">
+        <img src="img/passaro.gif" alt="" width="200" class="passaro">
+    </div>
+
+</body>
+
+</html>
