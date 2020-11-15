@@ -5,51 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Animação</title>
-    <style>
-        @-webkit-keyframes rodaroda {
-            from {
-                -webkit-transform: rotate(0deg);
-            }
-
-            to {
-                -webkit-transform: rotate(360deg);
-            }
-        }
-
-        .bola {
-            margin: 50px;
-            -webkit-animation-name: rodaroda;
-            -webkit-animation-duration: 3s;
-            -webkit-animation-timing-function: linear;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: normal;
-        }
-
-        .roda-contrario {
-            -webkit-animation-direction: reverse;
-
-        }
-
-        .bola:hover {
-            -webkit-animation-direction: alternate;
-
-        }
-
-        .passaro {
-            position: relative;
-            animation: mymove 20s infinite;
-        }
-
-        @keyframes mymove {
-            from {
-                left : 0px;
-            }
-
-            to {
-                left: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
